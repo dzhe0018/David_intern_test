@@ -1,0 +1,21 @@
+
+# show 'EntryForm'
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entry Form</title>
+</head>
+<body>
+    <h1>Entry Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        <ul>
+            <li><label for="id_name">Name:</label> <input type="text" name="name" id="id_name" /></li>
+            <li><label for="id_age">Age:</label> <input type="text" name="age" id="id_age" /></li>
+        </ul>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
